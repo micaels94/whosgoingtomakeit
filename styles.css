@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+:root{
+  --font-family: 'Montserrat', sans-serif;
+}
+
+*{
+  margin: 0; 
+  padding: 0; 
+  box-sizing: border-box; 
+}
+
+html{
+ background-image: linear-gradient(120deg, #fccb90 0%, #d57eeb 100%);
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+  height: 100vh;
+  font-family: var(--font-family);
+  
+}
+
+#h1-result{
+  display: none;
+}
+
+#descobrir-container{
+  display: flex;
+  justify-content: center;
+}
+
+form{
+  width: 150%;
+  display: flex;
+  flex-direction: column;
+  margin-left: -20%;
+  height: 400px;
+  background: rgba(255, 255, 255, 0.33);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5.7px);
+  -webkit-backdrop-filter: blur(5.7px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+#value-cont{
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  
+}
+
+#value-cont:first-child{
+
+}
+
+form > h1{
+  text-align: center;
+  margin: 5%;
+}
+
+#value-cont > input{
+  margin: 2%;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 1.1rem;
+  padding: 5px;
+  border: none;
+}
+
+#descobrir{
+  font-size: 14px;
+  color: #fff;
+  background-color: #0066CC;
+  padding: 10px 30px;
+  border: 2px solid #0066cc;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+  border-radius: 50px;
+  transition : 777ms;
+  transform: translateY(0);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+}
+
+#descobrir:hover{
+  transition : 777ms;
+  padding: 10px 50px;
+  transform : translateY(-0px);
+  background-color: #fff;
+  color: #0066cc;
+  border: solid 2px #0066cc;
+}
+
+#new-decision-container{
+  display: flex;
+  justify-content: center; 
+  margin-top: 9%;
+}
+
+#nova-decisao{
+  
+  display: none;
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.77);
+  border-radius: 50px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(7.2px);
+  -webkit-backdrop-filter: blur(7.2px);
+  border: 1px solid rgba(255, 255, 255, 0.17);
+  width: 10rem;
+  height: 3rem;
+  transition: background 300ms linear;
+  font-size: 1.1rem;
+}
+
+#nova-decisao:hover{
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.46);
+  border-radius: 50px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(7.2px);
+  -webkit-backdrop-filter: blur(7.2px);
+  border: 1px solid rgba(255, 255, 255, 0.17);
+}
